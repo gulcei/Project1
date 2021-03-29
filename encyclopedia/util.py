@@ -47,13 +47,13 @@ def get_title(title):
     except FileNotFoundError:
         return None
 
-def search(title):
+def search(request):
     q = request.GET["q"]
-    if util.get_entry(q):
-        return q
-    elif title.include(q):
-        return util.list_entries(q)
-    else:
-        return None 
+#    if util.get_entry(q):
+#        return q
+#    elif title.include(q):
+#        return util.list_entries(q)
+#    else:
+#        return None 
 
         

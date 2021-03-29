@@ -16,8 +16,8 @@ def entry(request, entry):
         "entry": util.get_entry(entry)
     })    
 
-def search(request, entry):
-    return render(request, "encyclopedia/search.html", {
+def search(request, search):
+    return render(request, "encyclopedia/entry.html", {
         "q": util.search(entry)
     })
 
